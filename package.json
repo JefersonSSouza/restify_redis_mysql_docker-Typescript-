@@ -1,0 +1,27 @@
+{
+  "name": "ts_app",
+  "packageManager": "yarn@3.0.2",
+  "scripts": {
+    "start": "ts-node app.ts",
+    "migrate": "knex migrate:latest",
+    "docker-compose-up": "docker-compose up"
+  },
+  "devDependencies": {
+    "@types/knex": "^0.16.1",
+    "@types/node": "^16.10.2",
+    "@types/redis": "^2.8.32",
+    "@types/restify": "^8.5.2",
+    "body-parser": "^1.19.0",
+    "mysql2": "^2.3.0",
+    "shelljs": "^0.8.4",
+    "ts-node": "^10.2.1",
+    "typescript": "^4.4.3",
+    "util": "^0.12.4"
+  },
+  "dependencies": {
+    "dotenv": "^10.0.0",
+    "promise-redis": "^0.0.5",
+    "restify": "^8.6.0",
+    "restify-router": "^0.6.2"
+  }
+}
